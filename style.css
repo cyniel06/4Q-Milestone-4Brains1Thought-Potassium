@@ -1,0 +1,119 @@
+container{
+    text-align: center;
+}
+body {
+    background-image: url("homepagebg.jpg");
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+body > * {
+    text-align: center;
+}
+
+
+.title {
+    margin-top: 200px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #2a5298;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+
+#greetings {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+#board{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.row{  
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 60px);
+}
+
+.box{
+    width: 60px;
+    height: 60px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+.correct{
+    background-color: green;
+}
+
+.present{
+    background-color: yellow;
+}
+
+.absent{
+    background-color: red;
+}

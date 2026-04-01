@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wordle</title>
+
+        <meta charset = "UTF-8">
+        <meta name="author" content="4 Brains 1 Thought">
+
+        <link rel = "stylesheet" href="style.css">
+    </head>
+
+    <body onload="generateKeyboard()">
+        <div id="board">
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="row">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div id="keyboard"></div>
+
+        <button class="button" onclick="onButtonClickedDelete()">DELETE</button>
+        <button class="button" onclick="onButtonClickedEnter()">ENTER</button>
+        <button class="button" onclick="onButtonClickedReset()">RESET</button>
+
+        <div id="Result"></div>
+
+        <script src="game.js"></script>
+
+        
+    </body>
+</html>
