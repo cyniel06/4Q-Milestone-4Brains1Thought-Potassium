@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wordle</title>
+
+        <meta charset = "UTF-8">
+        <meta name="author" content="4 Brains 1 Thought">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body onload="savedUsername()">
+        <div class="container">
+      <h1 class="title">Introduction:</h1>
+      <p class="intro">
+        Welcome to our Wordle Game! Challenge your mind and guess the hidden word.
+    </p>
+
+        <br><br>
+        <h2>Instructions:</h2>
+        <p>You need to guess the hidden word.<br>
+          You have a limited number of attempts to get it right.<br>
+          After each guess, the letters will change color:<br>
+             Green = correct letter in the correct position<br>
+             Yellow = correct letter but wrong position<br>
+             Red = letter is not in the word<br>
+          Use the clues to improve your next guess.<br>
+        </p>
+        <br><br>
+        
+        
+
+        <h2>To start the game, please enter your username.</h2>
+
+        <form name="user" action="game.html">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required pattern="[A-Za-z\d_]*">
+
+            <br><br>
+
+            <button type="button" onclick="greetUser()">Submit Name</button>
+            <br>
+            <button type="reset">Reset</button>
+
+            <br><br>
+
+            <p id="greetings"></p>
+
+            <button type="submit">Play</button>
+
+        </form>
+
+        <script src="index.js"></script>
+    </div>  
+    </body>
+</html>
